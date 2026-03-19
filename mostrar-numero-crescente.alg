@@ -9,6 +9,8 @@ var
     numero2: inteiro
     // O terceiro número a ser comparado
     numero3: inteiro
+    // Variável auxiliar para armazenar o maior número, caso seja necessário para a ordenação
+    maior: inteiro
 inicio
     escreva("Digite o primeiro número: ")
         // Lê o primeiro número do usuário e armazena na variável 'numero1'
@@ -19,29 +21,30 @@ inicio
     escreva("Digite o terceiro número: ")
         // Lê o terceiro número do usuário e armazena na variável 'numero3'
         leia(numero3)
-    // Verifica se 'numero1' é o menor dos três números
-    se numero1 <= numero2 e numero1 <= numero3 entao
-        escreva(numero1, " < ")
-        se numero2 <= numero3 entao
-            escreva(numero2, " < ", numero3)
-         senao
-            escreva(numero3, " < ", numero2)
-        fimse
-    senao
-        // Caso 'numero1' não seja o menor, verificamos se 'numero2' é o menor dos três números.
-        // Aqui usamos uma técnica de aninhamento para fazer essa verificação.
-        // Aninhamento é uma técnica onde uma estrutura de controle (como um 'se') é colocada dentro de outra estrutura de controle para criar uma hierarquia de decisões.
-        se numero2 <= numero1 e numero2 <= numero3 entao
-            escreva(numero2, " < ")
-            se numero1 <= numero3 entao
-                escreva(numero1, " < ", numero3)
-            senao
-                escreva(numero3, " < ", numero1)
-            fimse
-        senao
-            // Como já verificamos que 'numero1' não é o menor e 'numero2' também não é o menor, podemos concluir que 'numero3' é o menor dos três números.
-            escreva(numero3, " < ", numero2, " < ", numero1)
-        fimse
+        
+    // O algoritmo a seguir compara os números inseridos e os ordena em ordem crescente utilizando estruturas condicionais.
+    // A lógica é baseada em comparar cada número com os outros e realizar trocas quando necessário para garantir a ordem correta.
+    // Essa abordagem é conhecida como bubble sort, onde os números são comparados e trocados até que estejam em ordem.
+
+    // Verifica se 'numero1' é maior ou igual a 'numero2'. Se for, troca os valores para garantir que 'numero1' seja o menor.
+    se numero1 >= numero2 entao
+        maior := numero1
+        numero1 := numero2
+        numero2 := maior
     fimse
+    // Verifica se 'numero1' é maior ou igual a 'numero3'. Se for, troca os valores para garantir que 'numero1' seja o menor.
+    se numero1 >= numero3 entao
+        maior := numero1
+        numero1 := numero3
+        numero3 := maior
+    fimse
+    // Verifica se 'numero2' é maior ou igual a 'numero3'. Se for, troca os valores para garantir que 'numero2' seja o menor entre os dois.
+    se numero2 >= numero3 entao
+        maior := numero2
+        numero2 := numero3
+        numero3 := maior
+    fimse
+    // Exibe os números em ordem crescente
+    escreva("Os números em ordem crescente são: ", numero1, " < ", numero2, " < ", numero3)
 
 fimalgoritmo
