@@ -61,6 +61,11 @@ Os arquivos estao organizados em uma **progressao gradual** de dificuldade:
 - **Conceitos:** estrutura de repeticao `para/ate/faca`, iteracao, sequencias matematicas
 - **Descricao:** Gera os primeiros N termos da sequencia de Fibonacci
 
+### 8.  `sissa.alg` - Algoritmo de Sissa
+
+- **Conceitos** laço para, variáveis reais (tipo numerico grande), acumulador
+- **Descricao** Algoritmo da fábula de Sissa (progressão geométrica no tabuleiro de xadrez)
+
 ## Conceitos Abordados
 
 | Conceito | Nivel | Arquivos |

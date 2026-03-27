@@ -26,20 +26,20 @@ inicio
     // A lógica é baseada em comparar cada número com os outros e realizar trocas quando necessário para garantir a ordem correta.
     // Essa abordagem é conhecida como bubble sort, onde os números são comparados e trocados até que estejam em ordem.
 
-    // Verifica se 'numero1' é maior ou igual a 'numero2'. Se for, troca os valores para garantir que 'numero1' seja o menor.
-    se numero1 >= numero2 entao
+    // Verifica se 'numero1' é maior que 'numero2'. Se for, troca os valores para garantir que 'numero1' seja o menor.
+    se numero1 > numero2 entao
         maior := numero1
         numero1 := numero2
         numero2 := maior
     fimse
-    // Verifica se 'numero1' é maior ou igual a 'numero3'. Se for, troca os valores para garantir que 'numero1' seja o menor.
-    se numero1 >= numero3 entao
+    // Verifica se 'numero1' é maior que 'numero3'. Se for, troca os valores para garantir que 'numero1' seja o menor.
+    se numero1 > numero3 entao
         maior := numero1
         numero1 := numero3
         numero3 := maior
     fimse
-    // Verifica se 'numero2' é maior ou igual a 'numero3'. Se for, troca os valores para garantir que 'numero2' seja o menor entre os dois.
-    se numero2 >= numero3 entao
+    // Verifica se 'numero2' é maior que 'numero3'. Se for, troca os valores para garantir que 'numero2' seja o menor entre os dois.
+    se numero2 > numero3 entao
         maior := numero2
         numero2 := numero3
         numero3 := maior
