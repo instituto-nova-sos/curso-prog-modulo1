@@ -147,7 +147,7 @@ git commit -m "feat: descrição da alteração"
 ### 6. Enviar a branch para o GitHub
 
 ```bash
-git push origin feature/nome-da-sua-feature
+git push -u origin feature/nome-da-sua-feature
 ```
 
 ### 7. Abrir um Pull Request (PR)
