@@ -107,6 +107,65 @@ Os arquivos estao organizados em uma **progressao gradual** de dificuldade:
 - **Respeito ao ritmo do aluno:** consolidacao antes de avancar
 - **Formacao etica:** uso consciente e responsavel da tecnologia
 
+## 🚀 Fluxo básico de contribuição com Git e GitHub
+
+Siga os passos abaixo para criar uma branch, fazer commit e abrir um Pull Request (PR):
+
+### 1. Atualizar o repositório local
+
+```bash
+git checkout main
+git pull origin main
+```
+
+### 2. Criar uma nova branch
+
+Use um nome descritivo para sua branch:
+
+```bash
+git checkout -b feature/nome-da-sua-feature
+```
+
+### 3. Fazer alterações no código
+
+Edite os arquivos necessários no projeto.
+
+### 4. Adicionar as mudanças
+
+```bash
+git add .
+```
+
+### 5. Criar um commit
+
+Escreva uma mensagem clara sobre o que foi feito:
+
+```bash
+git commit -m "feat: descrição da alteração"
+```
+
+### 6. Enviar a branch para o GitHub
+
+```bash
+git push -u origin feature/nome-da-sua-feature
+```
+
+### 7. Abrir um Pull Request (PR)
+
+- Acesse o repositório no GitHub
+- Clique em **Compare & pull request**
+- Adicione um título e uma descrição
+- Clique em **Create pull request**
+
+---
+
+## ✅ Boas práticas
+
+- Use nomes de branch claros, como `feature/`, `fix/` ou `chore/`
+- Escreva commits objetivos
+- Sempre atualize a branch `main` antes de começar
+- Revise seu código antes de abrir o PR
+
 ---
 
 **Instituto Nova SOS** | Projeto SOS Capacita
