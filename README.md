@@ -66,6 +66,11 @@ Os arquivos estao organizados em uma **progressao gradual** de dificuldade:
 - **Conceitos** laço para, variáveis reais (tipo numerico grande), acumulador
 - **Descricao** Algoritmo da fábula de Sissa (progressão geométrica no tabuleiro de xadrez)
 
+### 9.  `conversor-temperatura.alg` - Algoritmo de Conversão de Temperatura
+
+- **Conceitos** treino git, uppercase
+- **Descricao** Converte uma temperatura de Celsius para Fahrenheit e vice-versa.
+
 ## Conceitos Abordados
 
 | Conceito | Nivel | Arquivos |
@@ -77,6 +82,7 @@ Os arquivos estao organizados em uma **progressao gradual** de dificuldade:
 | Condicionais aninhadas | Intermediario | mostrar-numero-crescente, hora-extra |
 | Operadores logicos (`e`) | Intermediario | mostrar-numero-crescente |
 | Lacos de repeticao (`para/ate/faca`) | Intermediario | fibonacci |
+| Git e fluxos de promocao de codigo | Avancado | conversor-temperatura |
 
 ## Ferramenta Utilizada
 
